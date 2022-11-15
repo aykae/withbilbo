@@ -1,0 +1,126 @@
+@font-face{
+    font-family: "BalooBhai";
+    src: url("../fonts/BalooBhai.ttf");
+}
+@font-face{
+    font-family: "Righteous";
+    src: url("../fonts/Righteous-Regular.ttf");
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+    overflow: hidden;
+}
+
+.landing {
+    /* background-image: linear-gradient(to bottom right, black, rgb(107, 107, 107)); */
+    background-image: radial-gradient(circle at 100%, black, rgb(65, 65, 65));
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+
+} 
+
+.maintext {
+    margin: auto;
+    padding: 15% 0 0 0;
+
+    width: 50%;
+    height: 100%;
+
+    text-align: center;
+}
+
+.maintext span {
+    padding: 0;
+    margin: 0;
+
+    background-color: none;
+    text-align: center;
+    color:white;
+    font-family: "Trebuchet MS";
+    font-size: 50px;
+    font-weight: 300;
+}
+
+.maintext .phrase {
+    opacity: 1;
+
+    /* display: block; */
+    position: absolute;
+
+
+}
+
+.phrase:nth-of-type(1) {
+    animation-name: rotate infinite;
+    animation-duration: 1.5s;
+    animation-delay: 0.5s;
+}
+
+.phrase:nth-of-type(2) {
+  animation-name: rotate infinite;
+  animation-duration: 1.5s;
+  animation-delay: 2s;
+}
+
+.phrase:nth-of-type(3) {
+  animation-name: rotate infinite;
+  animation-duration: 1.5s;
+  animation-delay: 3.5s;
+}
+
+@keyframes rotate {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 50px, 0);
+  }
+  
+  20%, 80% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+  
+  100% {
+    opacity: 0;
+    transform: translate3d(0, -25px, 0);
+  }
+}
+
+@keyframes rotate-last {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 50px, 0);
+  }
+  
+  50%, 100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+
+.maintext .static {
+    padding: 0 20px 0px 0px;
+
+}
+
+
+.maintext h1 {
+    margin: 0;
+    padding: 0;
+
+    display: inline-block;
+
+    background-color: none;
+    text-align: center;
+    color:white;
+    font-family: "Righteous";
+    font-size: 100px;
+    font-weight: 500;
+}
